@@ -1,0 +1,110 @@
+
+--- Inventory Report ---
+Inventory Report:
+Product: Laptop, Category: Electronics, Price: 1000.00 USD, Quantity: 250
+Product: Apple, Category: Food, Price: 30.50 UAH, Quantity: 100
+Product: T-Shirt, Category: Clothing, Price: 20.00 EUR, Quantity: 50
+
+Оновлено ціни для
+ -Laptop: 900.00 USD
+ -T-Shirt: 80.25 UAH
+
+Зміна кількості товару для
+ -Apple: 70
+ -T-Shirt: 60
+
+--- Inventory Report ---
+Inventory Report:
+Product: Laptop, Category: Electronics, Price: 900.00 USD, Quantity: 250
+Product: Apple, Category: Food, Price: 30.50 UAH, Quantity: 70
+Product: T-Shirt, Category: Clothing, Price: 80.25 UAH, Quantity: 60
+
+Було купленно деяку кількість товарів laptop та apple
+
+--- Inventory Report ---
+Inventory Report:
+Product: Laptop, Category: Electronics, Price: 900.00 USD, Quantity: 214
+Product: Apple, Category: Food, Price: 30.50 UAH, Quantity: 50
+Product: T-Shirt, Category: Clothing, Price: 80.25 UAH, Quantity: 60
+
+--- Product Sales by month Report ---
+Laptop:
+ - 2024:
+  -- січень: 2700.0 USD
+-----------
+ - 2025:
+  -- січень: 900.0 USD,
+  -- лютий: 2700.0 USD,
+  -- березень: 2700.0 USD,
+  -- квітень: 3600.0 USD,
+  -- травень: 2700.0 USD,
+  -- червень: 2700.0 USD,
+  -- липень: 900.0 USD,
+  -- серпень: 1800.0 USD,
+  -- вересень: 3600.0 USD,
+  -- жовтень: 3600.0 USD,
+  -- листопад: 3600.0 USD,
+  -- грудень: 900.0 USD
+-----------
+
+Apple:
+ - 2024:
+  -- січень: 1.54 USD
+-----------
+ - 2025:
+  -- січень: 0.77 USD,
+  -- лютий: 1.54 USD,
+  -- березень: 1.54 USD,
+  -- квітень: 0.77 USD,
+  -- травень: 1.54 USD,
+  -- червень: 1.54 USD,
+  -- липень: 0.77 USD,
+  -- серпень: 0.77 USD,
+  -- вересень: 0.77 USD,
+  -- жовтень: 1.54 USD,
+  -- листопад: 1.54 USD,
+  -- грудень: 0.77 USD
+-----------
+
+T-Shirt:
+No sales data available.
+
+--- Overall Revenue in USD by month Report ---
+ - 2024:
+   -- січень: 2701.54 USD
+ - 2025:
+   -- січень: 900.77 USD,
+   -- лютий: 2701.54 USD,
+   -- березень: 2701.54 USD,
+   -- квітень: 3600.77 USD,
+   -- травень: 2701.54 USD,
+   -- червень: 2701.54 USD,
+   -- липень: 900.77 USD,
+   -- серпень: 1800.77 USD,
+   -- вересень: 3600.77 USD,
+   -- жовтень: 3601.54 USD,
+   -- листопад: 3601.54 USD,
+   -- грудень: 900.77 USD
+
+
+--- Overall Revenue in UAH by month by category Electronics Report ---
+ - 2024:
+   -- січень: 106650.00 UAH
+ - 2025:
+   -- січень: 35550.00 UAH,
+   -- лютий: 106650.00 UAH,
+   -- березень: 106650.00 UAH,
+   -- квітень: 142200.00 UAH,
+   -- травень: 106650.00 UAH,
+   -- червень: 106650.00 UAH,
+   -- липень: 35550.00 UAH,
+   -- серпень: 71100.00 UAH,
+   -- вересень: 142200.00 UAH,
+   -- жовтень: 142200.00 UAH,
+   -- листопад: 142200.00 UAH,
+   -- грудень: 35550.00 UAH
+
+
+D:\HomeWork\Политех\2 курс\кпз\lab1\warehouse\warehouse\bin\Debug\net8.0\warehouse.exe (процесс 19372) завершил работу с кодом 0.
+Чтобы автоматически закрывать консоль при остановке отладки, включите параметр "Сервис" ->"Параметры" ->"Отладка" -> "Автоматически закрыть консоль при остановке отладки".
+Нажмите любую клавишу, чтобы закрыть это окно…
