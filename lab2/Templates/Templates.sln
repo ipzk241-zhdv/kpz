@@ -12,15 +12,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Templates", "Templates\Temp
 		{F560168F-C9D5-4CE5-A595-0DB58FD46A0B} = {F560168F-C9D5-4CE5-A595-0DB58FD46A0B}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FabricClassLibrary", "FabricClassList\FabricClassLibrary.csproj", "{7156DFD7-3587-44B0-9A72-57AC1A25F0EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FabricClassList", "FabricClassList\FabricClassList.csproj", "{7156DFD7-3587-44B0-9A72-57AC1A25F0EE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonClassLibrary", "SingletonClassLibrary\SingletonClassLibrary.csproj", "{E61F58B8-3897-4389-B947-392B0E502A8D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrototypeClassLibrary", "PrototypeClassLibrary\PrototypeClassLibrary.csproj", "{62ECE527-AA83-4B96-8C07-84C33D7408A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrototypeClassList", "PrototypeClassLibrary\PrototypeClassList.csproj", "{62ECE527-AA83-4B96-8C07-84C33D7408A5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderClassLibrary", "BuilderClassLibrary\BuilderClassLibrary.csproj", "{8D1D874F-9A3F-46F5-80F5-6EA911CF4D4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderClassList", "BuilderClassLibrary\BuilderClassList.csproj", "{8D1D874F-9A3F-46F5-80F5-6EA911CF4D4B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFabricClassLibrary", "AbstractFactoryClassLibrary\AbstractFabricClassLibrary.csproj", "{F560168F-C9D5-4CE5-A595-0DB58FD46A0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFabricClassList", "AbstractFactoryClassLibrary\AbstractFabricClassList.csproj", "{F560168F-C9D5-4CE5-A595-0DB58FD46A0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

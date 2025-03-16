@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace PrototypeClassLibrary
 {
-    internal class IVirus
+    public interface IVirus
     {
+        IVirus Clone();
     }
 }
