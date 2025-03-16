@@ -118,6 +118,7 @@ class Program
 
     static void BuilderDemo()
     {
+        Console.WriteLine("\n\n------- Builder -------");
         var director = new CharacterDirector();
 
         var heroBuilder = new HeroBuilder();

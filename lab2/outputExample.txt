@@ -1,0 +1,103 @@
+------- Fabric -------
+Purchasing subscription via Website...
+Subscription: Domestic
+Monthly Fee: 10 USD
+Minimum Period: 6 months
+Features:
+ - Basic Channels
+ - HD Quality
+
+Purchasing subscription via Mobile App...
+Subscription: Educational
+Monthly Fee: 8 USD
+Minimum Period: 3 months
+Features:
+ - Educational Channels
+ - Documentaries
+ - Online Courses
+
+Purchasing subscription via Manager Call...
+Subscription: Premium
+Monthly Fee: 20 USD
+Minimum Period: 12 months
+Features:
+ - All Channels
+ - 4K Quality
+ - No Ads
+ - Sports Package
+
+------- Abstract Fabric -------
+
+=== Creating Devices ===
+IProne Laptop created.
+IProne Netbook created.
+IProne EBook created.
+IProne Smartphone created.
+
+=== Creating Devices ===
+Kiaomi Laptop created.
+Kiaomi Netbook created.
+Kiaomi EBook created.
+Kiaomi Smartphone created.
+
+=== Creating Devices ===
+Balaxy Laptop created.
+Balaxy Netbook created.
+Balaxy EBook created.
+Balaxy Smartphone created.
+
+
+------- Singletone -------
+Authenticator instance created.
+Authenticating User1...
+Authenticating User4...
+Authenticating User2...
+Authenticating User5...
+Authenticating User3...
+a1 == a2: True
+
+
+------- Prototype -------
+
+Original Virus Family:
+ Alpha (Corona) - Age: 1, Weight: 0,5g
+   Beta (Corona) - Age: 1, Weight: 0,3g
+     Delta (Corona) - Age: 1, Weight: 0,1g
+   Gamma (Corona) - Age: 1, Weight: 0,2g
+
+Cloned Virus Family:
+ Alpha (Corona) - Age: 1, Weight: 0,5g
+   Beta (Corona) - Age: 1, Weight: 0,3g
+     Delta (Corona) - Age: 1, Weight: 0,1g
+   Gamma (Corona) - Age: 1, Weight: 0,2g
+
+Original == Clone: False
+Original.Child[0] == Clone.Child[0]: False
+
+
+------- Builder -------
+Hero: Raziel aka Kain's lieutenant
+Class: Soul Reaver
+Special: Soul Reave
+Ultimate: Reaver
+Height: 180
+Body: Athletic vampire, but bony
+Hair: Black, Eyes: Blue
+Clothes: Scarf
+Inventory: Soul Reaver Wraith Sword
+Deeds: Good: Killed his brothers; Good: Defeated the Kain
+
+Enemy: Moebius aka Moebius the Time Streamer
+Class: Eldrith
+Special: Serve Elder God
+Ultimate: Travel in Time
+Height: 170
+Body: Lean
+Hair: Bald, Eyes: White
+Clothes: Purple Cloak
+Inventory: Moebius's Staff
+Deeds: Evil: Served to Edler God; Evil: Stole the time
+
+D:\HomeWork\Политех\2 курс\кпз\lab2\Templates\Templates\bin\Debug\net8.0\Templates.exe (процесс 25208) завершил работу с кодом 0.
+Чтобы автоматически закрывать консоль при остановке отладки, включите параметр "Сервис" ->"Параметры" ->"Отладка" -> "Автоматически закрыть консоль при остановке отладки".
+Нажмите любую клавишу, чтобы закрыть это окно:
