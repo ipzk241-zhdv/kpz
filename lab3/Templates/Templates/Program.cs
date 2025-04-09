@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using Templates.Adapter;
+using Templates.Bridge;
 using Templates.Decorator;
 
 namespace Templates
@@ -16,7 +17,8 @@ namespace Templates
             consoleLogger.Log("\n\n=== Decorator ===");
             Decorator();
 
-
+            consoleLogger.Log("\n\n=== Bridge ===");
+            Bridge();
 
             Console.ReadKey();
         }
@@ -58,6 +60,23 @@ namespace Templates
             mage = new Armor(mage);
 
             Console.WriteLine($"{mage.GetDescription()}, Power: {mage.GetPower()}");
+        }
+
+        public static void Bridge()
+        {
+            IRenderer vector = new VectorRenderer();
+            IRenderer raster = new RasterRenderer();
+
+            Shape circle1 = new Circle(vector);
+            Shape circle2 = new Circle(raster);
+
+            Shape square = new Square(vector);
+            Shape triangle = new Triangle(raster);
+
+            circle1.Draw();     // Drawing Circle as vectors.
+            circle2.Draw();     // Drawing Circle as pixels.
+            square.Draw();      // Drawing Square as vectors.
+            triangle.Draw();    // Drawing Triangle as pixels.
         }
     }
 }
