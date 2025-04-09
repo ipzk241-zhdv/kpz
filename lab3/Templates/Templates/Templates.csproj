@@ -47,10 +47,16 @@
     <Compile Include="Adapter\IWriterLogger.cs" />
     <Compile Include="Adapter\FileWriter.cs" />
     <Compile Include="Adapter\Logger.cs" />
+    <Compile Include="Bridge\Shape.cs" />
+    <Compile Include="Bridge\IRenderer.cs" />
     <Compile Include="Decorator\HeroDecorator.cs" />
     <Compile Include="Decorator\IHero.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy\SmartTextReaderLocker.cs" />
+    <Compile Include="Proxy\SmartTextChecker.cs" />
+    <Compile Include="Proxy\SmartTextReader.cs" />
+    <Compile Include="Proxy\ITextReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

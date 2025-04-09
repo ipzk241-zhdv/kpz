@@ -3,11 +3,14 @@ using System.IO;
 using Templates.Adapter;
 using Templates.Bridge;
 using Templates.Decorator;
+using Templates.Proxy;
 
 namespace Templates
 {
     internal class Program
     {
+        public static string currentPath = Directory.GetCurrentDirectory();
+
         static void Main(string[] args)
         {
             Logger consoleLogger = new Logger();
@@ -20,6 +23,9 @@ namespace Templates
             consoleLogger.Log("\n\n=== Bridge ===");
             Bridge();
 
+            consoleLogger.Log("\n\n=== Proxy ===");
+            Proxy();
+
             Console.ReadKey();
         }
 
@@ -31,7 +37,6 @@ namespace Templates
             consoleLogger.Error("Something went wrong!");
 
             Console.WriteLine("\n=== File Logger via Adapter ===");
-            string currentPath = Directory.GetCurrentDirectory();
             string path = currentPath + "\\adapterLog.txt";
             FileWriter writer = new FileWriter(path);
             IWriterLogger fileLogger = new FileLoggerAdapter(writer);
@@ -77,6 +82,25 @@ namespace Templates
             circle2.Draw();     // Drawing Circle as pixels.
             square.Draw();      // Drawing Square as vectors.
             triangle.Draw();    // Drawing Triangle as pixels.
+        }
+
+        public static void Proxy()
+        {
+            string allowedFile = currentPath + "\\allowed.txt";
+            string deniedFile = currentPath + "\\secret.log";
+
+            File.WriteAllText(allowedFile, "Hello\nWorld!");
+            File.WriteAllText(deniedFile, "This is confidential!");
+
+            ITextReader reader = new SmartTextReader();
+            ITextReader loggingProxy = new SmartTextChecker(reader);
+            ITextReader secureProxy = new SmartTextReaderLocker(loggingProxy, @"\.log$");
+
+            Console.WriteLine("Reading allowed.txt:");
+            secureProxy.ReadText(allowedFile);
+
+            Console.WriteLine("\nReading secret.log:");
+            secureProxy.ReadText(deniedFile);
         }
     }
 }
