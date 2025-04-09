@@ -47,6 +47,8 @@
     <Compile Include="Adapter\IWriterLogger.cs" />
     <Compile Include="Adapter\FileWriter.cs" />
     <Compile Include="Adapter\Logger.cs" />
+    <Compile Include="Decorator\HeroDecorator.cs" />
+    <Compile Include="Decorator\IHero.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
