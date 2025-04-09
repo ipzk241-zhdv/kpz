@@ -49,6 +49,8 @@
     <Compile Include="Adapter\Logger.cs" />
     <Compile Include="Bridge\Shape.cs" />
     <Compile Include="Bridge\IRenderer.cs" />
+    <Compile Include="Composite\LightElementNode.cs" />
+    <Compile Include="Composite\LightNode.cs" />
     <Compile Include="Decorator\HeroDecorator.cs" />
     <Compile Include="Decorator\IHero.cs" />
     <Compile Include="Program.cs" />
