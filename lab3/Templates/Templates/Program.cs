@@ -4,6 +4,7 @@ using Templates.Adapter;
 using Templates.Bridge;
 using Templates.Composite;
 using Templates.Decorator;
+using Templates.Flyweight;
 using Templates.Proxy;
 
 namespace Templates
@@ -29,6 +30,9 @@ namespace Templates
 
             consoleLogger.Log("\n\n=== Composite ===");
             Composite();
+
+            consoleLogger.Log("\n\n=== Flyweight ===");
+            Flyweight();
 
             Console.ReadKey();
         }
@@ -130,6 +134,13 @@ namespace Templates
             Console.WriteLine();
             Console.WriteLine("== InnerHTML ==");
             Console.WriteLine(div.InnerHTML);
+        }
+
+        public static void Flyweight()
+        {
+            var root = BookParser.ParseBookToHtml(BookParser.BookPath, out long memoryUsed);
+            File.WriteAllText(currentPath + "FlyweightBook.txt", root.OuterHTML);
+            Console.WriteLine($"\nВикористано памʼяті: {memoryUsed / 1024.0:F2} КБ");
         }
     }
 }

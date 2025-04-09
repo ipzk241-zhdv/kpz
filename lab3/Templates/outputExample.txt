@@ -1,0 +1,45 @@
+[LOG]: === Adapter ===
+[LOG]: Everything is running smoothly.
+[WARN]: This might be an issue.
+[ERROR]: Something went wrong!
+
+=== File Logger via Adapter ===
+Logs written to file: D:\HomeWork\Политех\2 курс\кпз\lab3\Templates\Templates\bin\Debug\adapterLog.txt
+[LOG]:
+
+=== Decorator ===
+Warrior, Power: 10
+Warrior + Sword + Armor + Magic Artifact, Power: 25
+Mage + Magic Artifact + Magic Artifact + Armor, Power: 25
+[LOG]:
+
+=== Bridge ===
+Drawing Circle as vectors.
+Drawing Circle as pixels.
+Drawing Square as vectors.
+Drawing Triangle as pixels.
+[LOG]:
+
+=== Proxy ===
+Reading allowed.txt:
+[INFO] Opening file: D:\HomeWork\Политех\2 курс\кпз\lab3\Templates\Templates\bin\Debug\allowed.txt
+[INFO] Successfully read file: D:\HomeWork\Политех\2 курс\кпз\lab3\Templates\Templates\bin\Debug\allowed.txt
+[INFO] Closing file: D:\HomeWork\Политех\2 курс\кпз\lab3\Templates\Templates\bin\Debug\allowed.txt
+[INFO] Total lines: 2
+[INFO] Total characters: 11
+
+Reading secret.log:
+Access denied!
+[LOG]:
+
+=== Composite ===
+== OuterHTML ==
+<div class="container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+
+== InnerHTML ==
+<h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/>
+[LOG]:
+
+=== Flyweight ===
+
+Використано пам?ят?: 1003,73 КБ
