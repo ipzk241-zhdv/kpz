@@ -1,0 +1,19 @@
+== HTML ==
+<button>Click me</button>
+
+== Симуляц?я под?й ==
+
+Dispatch click(1):
+cache update: 1
+counter update: 1
+
+Dispatch click(2):
+cache update: 1, 2
+counter update: 2
+
+Dispatch mouseover(0):
+counter update: 3
+
+== DisplayInfo ==
+The states are: 1, 2
+The state is: 3
