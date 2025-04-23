@@ -1,0 +1,7 @@
+== Local Image HTML ==
+<img src="assets/picture.png"/>
+[File] Завантажую зображення з файлової системи: assets/picture.png
+
+== Remote Image HTML ==
+<img src="https://example.com/photo.jpg"/>
+[Network] Завантажую зображення з мереж?: https://example.com/photo.jpg

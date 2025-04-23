@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Templates.Composite;
 
 namespace Templates
 {
@@ -7,35 +8,22 @@ namespace Templates
     {
         static void Main()
         {
-            Console.WriteLine("==== Chain of Responsobility ====");
-            Chain();
-
-            Console.WriteLine("\n==== Mediator ====");
-            Mediator();
-            Console.ReadKey();
+            Strategy();
         }
 
-        static void Chain()
+        static void Strategy()
         {
-            var support = new SupportSystem();
-            support.Start();
-        }
+            var localImg = new LightImageNode("assets/picture.png");
+            Console.WriteLine("== Local Image HTML ==");
+            Console.WriteLine(localImg.OuterHTML);
+            localImg.LoadImage();
 
-        static void Mediator()
-        {
-            var runway1 = new Runway("Runway A");
-            var runway2 = new Runway("Runway B");
+            Console.WriteLine();
 
-            var aircraft1 = new Aircraft("Boeing 737");
-            var aircraft2 = new Aircraft("Airbus A320");
-
-            var commandCentre = new CommandCentre(new[] { runway1, runway2 }, new[] { aircraft1, aircraft2 });
-
-            aircraft1.RequestLanding();
-            aircraft2.RequestLanding();
-
-            aircraft1.RequestTakeOff();
-            aircraft2.RequestTakeOff();
+            var remoteImg = new LightImageNode("https://example.com/photo.jpg");
+            Console.WriteLine("== Remote Image HTML ==");
+            Console.WriteLine(remoteImg.OuterHTML);
+            remoteImg.LoadImage();
         }
     }
 }
