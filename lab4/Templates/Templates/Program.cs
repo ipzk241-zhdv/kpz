@@ -12,7 +12,9 @@ namespace Templates
 
             Console.WriteLine("\n==== Mediator ====");
             Mediator();
-            Console.ReadKey();
+
+            Console.WriteLine("\n==== Memento ====");
+            Memento();
         }
 
         static void Chain()
@@ -36,6 +38,34 @@ namespace Templates
 
             aircraft1.RequestTakeOff();
             aircraft2.RequestTakeOff();
+        }
+
+        static void Memento()
+        {
+            var editor = new TextEditor();
+            var caretaker = new Caretaker(editor);
+
+            editor.Write("First line.\n");
+            caretaker.Backup();
+
+            editor.Write("Second line.\n");
+            caretaker.Backup();
+
+            editor.Write("Third line.\n");
+
+            Console.WriteLine("=== Current Document ===");
+            editor.Print();
+
+            Console.WriteLine();
+            caretaker.RenderSnapshotList();
+
+            Console.WriteLine("\n--- Performing Undo #1 ---");
+            caretaker.Undo();
+            editor.Print();
+
+            Console.WriteLine("\n--- Performing Undo #2 ---");
+            caretaker.Undo();
+            editor.Print();
         }
     }
 }

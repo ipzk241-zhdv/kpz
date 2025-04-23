@@ -1,0 +1,67 @@
+==== Chain of Responsobility ====
+
+[Головне меню]
+1. Проблеми з ?нтернетом
+2. Проблеми з оплатою
+3. ?нш? питання
+Ваш виб?р: 1
+
+[Техн?чна п?дтримка]
+1. Wi-Fi не працює
+2. Пов?льне з'єднання
+3. Немає сигналу
+Ваш виб?р: 3
+
+[Тип з'єднання]
+1. Кабельне
+2. Моб?льне
+3. Супутникове
+Ваш виб?р: 2
+
+[Детал? проблеми]
+1. Проблема виникає пер?одично
+2. Проблема пост?йна
+3. Проблема з новим обладнанням
+Ваш виб?р: 3
+
+[З'єднання з експертом]
+Вас буде з'єднано з оператором. Зачекайте на л?н?ї...
+
+==== Mediator ====
+
+Aircraft Boeing 737 is requesting to land.
+Runway 7e68e1dc-7ab7-434a-aa31-ac62a3e71a70 is now busy.
+Aircraft Boeing 737 landed on runway 7e68e1dc-7ab7-434a-aa31-ac62a3e71a70
+
+Aircraft Airbus A320 is requesting to land.
+Runway d9bfc3b6-f6e0-43a1-8fb7-2dda8ad82853 is now busy.
+Aircraft Airbus A320 landed on runway d9bfc3b6-f6e0-43a1-8fb7-2dda8ad82853
+
+Aircraft Boeing 737 is requesting to take off.
+Runway 7e68e1dc-7ab7-434a-aa31-ac62a3e71a70 is now free.
+Aircraft Boeing 737 took off from runway 7e68e1dc-7ab7-434a-aa31-ac62a3e71a70
+
+Aircraft Airbus A320 is requesting to take off.
+Runway d9bfc3b6-f6e0-43a1-8fb7-2dda8ad82853 is now free.
+Aircraft Airbus A320 took off from runway d9bfc3b6-f6e0-43a1-8fb7-2dda8ad82853
+
+==== Memento ====
+=== Current Document ===
+First line.
+Second line.
+Third line.
+
+
+Currently available snapshots:
+- dde8618f-9c7c-40d3-9d30-0a6df81c2c3a taken at 23.04.2025 22:02:46
+- 766eb036-73ea-4ef7-ba36-2437562b84dd taken at 23.04.2025 22:02:46
+
+--- Performing Undo #1 ---
+Undoing to snapshot 766eb036-73ea-4ef7-ba36-2437562b84dd from 23.04.2025 22:02:46
+First line.
+Second line.
+
+
+--- Performing Undo #2 ---
+Undoing to snapshot dde8618f-9c7c-40d3-9d30-0a6df81c2c3a from 23.04.2025 22:02:46
+First line.
