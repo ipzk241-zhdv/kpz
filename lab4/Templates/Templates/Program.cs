@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Templates.Composite;
 
 namespace Templates
 {
@@ -7,35 +8,38 @@ namespace Templates
     {
         static void Main()
         {
-            Console.WriteLine("==== Chain of Responsobility ====");
-            Chain();
-
-            Console.WriteLine("\n==== Mediator ====");
-            Mediator();
-            Console.ReadKey();
+            Observer();
         }
 
-        static void Chain()
+        static void Observer()
         {
-            var support = new SupportSystem();
-            support.Start();
-        }
+            var button = new LightElementNode("button", DisplayType.Inline);
+            button.AddChild(new LightTextNode("Click me"));
 
-        static void Mediator()
-        {
-            var runway1 = new Runway("Runway A");
-            var runway2 = new Runway("Runway B");
+            var cacheObs = new CacheObserver();
+            var counterObs = new CounterObserver();
 
-            var aircraft1 = new Aircraft("Boeing 737");
-            var aircraft2 = new Aircraft("Airbus A320");
+            button.AddEventListener("click", cacheObs);
+            button.AddEventListener("click", counterObs);
+            button.AddEventListener("mouseover", counterObs);
 
-            var commandCentre = new CommandCentre(new[] { runway1, runway2 }, new[] { aircraft1, aircraft2 });
+            Console.WriteLine("== HTML ==");
+            Console.WriteLine(button.OuterHTML);
+            Console.WriteLine();
 
-            aircraft1.RequestLanding();
-            aircraft2.RequestLanding();
+            Console.WriteLine("== Симуляція подій ==");
+            Console.WriteLine("\nDispatch click(1):");
+            button.DispatchEvent("click", 1);
 
-            aircraft1.RequestTakeOff();
-            aircraft2.RequestTakeOff();
+            Console.WriteLine("\nDispatch click(2):");
+            button.DispatchEvent("click", 2);
+
+            Console.WriteLine("\nDispatch mouseover(0):");
+            button.DispatchEvent("mouseover", 0);
+
+            Console.WriteLine("\n== DisplayInfo ==");
+            cacheObs.DisplayInfo();
+            counterObs.DisplayInfo();
         }
     }
 }
