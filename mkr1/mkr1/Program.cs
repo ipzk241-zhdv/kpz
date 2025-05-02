@@ -1,10 +1,32 @@
 using mkr1.LightHTML;
 using mkr1.Iterator;
 using mkr1.Command;
+using mkr1.State;
 
 var root = GenerateRoot();
+State();
 Iterator(root);
 Command();
+
+static void State()
+{
+    var p = new LightElementNode("p");
+    p.AddChild(new LightTextNode("This is visible"));
+
+    var hiddenP = new LightElementNode("p");
+    hiddenP.AddChild(new LightTextNode("You won't see me!"));
+    hiddenP.SetRenderState(new HiddenState());
+
+    var minifiedImg = new LightElementNode("img");
+    minifiedImg.SetRenderState(new MinifiedState());
+
+    var div = new LightElementNode("div");
+    div.AddChild(p);
+    div.AddChild(hiddenP);
+    div.AddChild(minifiedImg);
+
+    Console.WriteLine(div.OuterHTML);
+}
 
 static void Iterator(LightElementNode root)
 {
