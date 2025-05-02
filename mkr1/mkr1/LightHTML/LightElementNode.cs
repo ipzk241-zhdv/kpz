@@ -12,8 +12,16 @@ namespace mkr1.LightHTML
         public ClosingType Closing { get; }
         public List<string> CssClasses { get; } = new List<string>();
         public List<LightNode> Children { get; } = new List<LightNode>();
-       
+
         private IRenderState _renderState = new VisibleState();
+
+        public LightElementNode(string tagName, DisplayType display = DisplayType.Block, ClosingType closing = ClosingType.WithClosingTag)
+            : base()
+        {
+            TagName = tagName;
+            Display = display;
+            Closing = closing;
+        }
 
         public void SetRenderState(IRenderState state) => _renderState = state;
 
@@ -21,30 +29,43 @@ namespace mkr1.LightHTML
 
         public string GenerateFullHTML()
         {
-            string classAttribute = CssClasses.Count > 0
-                ? $" class=\"{string.Join(" ", CssClasses)}\"" : "";
+            var classAttr = CssClasses.Count > 0
+                ? $" class=\"{string.Join(" ", CssClasses)}\"" : string.Empty;
 
             if (Closing == ClosingType.SelfClosing)
-                return $"<{TagName}{classAttribute}/>";
+                return $"<{TagName}{classAttr}/>?";
 
-            return $"<{TagName}{classAttribute}>{InnerHTML}</{TagName}>";
+            return $"<{TagName}{classAttr}>{InnerHTML}</{TagName}>";
         }
 
-        public LightElementNode(string tagName, DisplayType display = DisplayType.Block, ClosingType closing = ClosingType.WithClosingTag)
+        public void AddClass(string className)
         {
-            TagName = tagName;
-            Display = display;
-            Closing = closing;
+            CssClasses.Add(className);
+            OnClassListApplied();
         }
 
-        public void AddClass(string className) => CssClasses.Add(className);
+        public void AddChild(LightNode child)
+        {
+            Children.Add(child);
+            OnInserted(child);
+        }
 
-        public void AddChild(LightNode child) => Children.Add(child);
+        public bool RemoveChild(LightNode child)
+        {
+            var removed = Children.Remove(child);
+            if (removed) OnRemoved(child);
+            return removed;
+        }
+
+        public void ApplyStyle(string styleDeclaration)
+        {
+            OnStylesApplied();
+        }
 
         public override string InnerHTML =>
             Closing == ClosingType.SelfClosing
                 ? string.Empty
-                : string.Join("", Children.Select(child => child.OuterHTML));
+                : string.Join("", Children.Select(child => child.Render()));
 
         public ILightIterator<LightNode> GetIterator(IteratorType type)
         {

@@ -1,3 +1,27 @@
+=== Template Method ===
+== div.addChild(p) ==
+LightElementNode class list applied!
+LightElementNode styles were applied!
+LightElementNode text rendered!
+<div><p></p></div>
+
+== p.addChild(text) ==
+LightElementNode inserted with new child LightTextNode!
+LightElementNode class list applied!
+LightElementNode styles were applied!
+LightTextNode class list applied!
+LightTextNode styles were applied!
+LightTextNode text rendered!
+LightTextNode text rendered!
+LightElementNode text rendered!
+<div><p>Hello</p></div>
+
+== ctrl + z, undo ==
+LightElementNode class list applied!
+LightElementNode styles were applied!
+LightElementNode text rendered!
+<div><p></p></div>
+
 === Iterator ===
 ==== DFS traversal ====
 <div class="container"><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div></div>
