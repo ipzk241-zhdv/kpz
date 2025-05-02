@@ -1,3 +1,31 @@
+# State
+- Implemented interface `IRenderState`  
+- Implemented 3 state:     
+-- `VisibleState` (display: block)    
+-- `HiddenState` (display: none)    
+-- `MinifiedState` (minified display without children)    
+- `LightElementNode` dynamically defines its state and displays corresponding OuterHTML   
+
+### Output examples:
+
+Example fragment:  
+```c#
+var p = new LightElementNode("p");
+p.AddChild(new LightTextNode("This is visible"));
+
+var hiddenP = new LightElementNode("p");
+hiddenP.AddChild(new LightTextNode("You won't see me!"));
+hiddenP.SetRenderState(new HiddenState());
+
+var minifiedDiv = new LightElementNode("div");
+minifiedDiv.SetRenderState(new MinifiedState());
+                                            
+                                              output
+Console.WriteLine(p.OuterHTML);            // <p>This is visible</p>
+Console.WriteLine(hiddenP.OuterHTML);      // ""
+Console.WriteLine(minifiedDiv.OuterHTML);  // <div/>
+```
+
 # Iterator
 - Implemented interfaces `ILightIterator<T>` and `ILightAggregable<T>`  
 - Implemented iterators:   
@@ -7,7 +35,7 @@
 
 ### Output examples:
 
-Example fragment:  
+Example fragment:   
 ```html
 <div class="container">
     <h1>Some header text</h1>

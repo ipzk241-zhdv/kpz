@@ -60,3 +60,6 @@ D:\HomeWork\Ïîëèòåõ\2 êóðñ\êïç\mkr1\mkr1\bin\Debug\net8.0\mkr1.exe
 <div><p>Hello</p></div>
 
 D:\HomeWork\Ïîëèòåõ\2 êóðñ\êïç\mkr1\mkr1\bin\Debug\net8.0\mkr1.exe (ïðîöåññ 3396) çàâåðøèë ðàáîòó ñ êîäîì 0.
+
+=== State ===
+<div><p>This is visible</p><img/></div>
