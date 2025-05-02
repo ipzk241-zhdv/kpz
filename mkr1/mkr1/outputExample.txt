@@ -1,3 +1,52 @@
+=== Iterator ===
+==== DFS traversal ====
+<div class="container"><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div></div>
+<div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+<h1>Welcome to LightHTML</h1>
+Welcome to LightHTML
+<p>This is a custom markup example.</p>
+This is a custom markup example.
+<img class="responsive"/>
+<div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+<h1>Welcome to LightHTML</h1>
+Welcome to LightHTML
+<p>This is a custom markup example.</p>
+This is a custom markup example.
+<img class="responsive"/>
+<div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+<h1>Welcome to LightHTML</h1>
+Welcome to LightHTML
+<p>This is a custom markup example.</p>
+This is a custom markup example.
+<img class="responsive"/>
+
+
+
+===== BFS traversal ====
+<div class="container"><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div></div>
+<div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+<div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+<div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+<h1>Welcome to LightHTML</h1>
+<p>This is a custom markup example.</p>
+<img class="responsive"/>
+<h1>Welcome to LightHTML</h1>
+<p>This is a custom markup example.</p>
+<img class="responsive"/>
+<h1>Welcome to LightHTML</h1>
+<p>This is a custom markup example.</p>
+<img class="responsive"/>
+Welcome to LightHTML
+This is a custom markup example.
+Welcome to LightHTML
+This is a custom markup example.
+Welcome to LightHTML
+This is a custom markup example.
+
+D:\HomeWork\Ïîëèòåõ\2 êóðñ\êïç\mkr1\mkr1\bin\Debug\net8.0\mkr1.exe (ïðîöåññ 14552) çàâåðøèë ðàáîòó ñ êîäîì 0.
+
+=== Command ===
+
 == div.addChild(p) ==
 <div><p></p></div>
 
@@ -10,4 +59,4 @@
 == ctrl + y, redo ==
 <div><p>Hello</p></div>
 
-D:\HomeWork\�������\2 ����\���\mkr1\mkr1\bin\Debug\net8.0\mkr1.exe (������� 3396) �������� ������ � ����� 0.
+D:\HomeWork\Ïîëèòåõ\2 êóðñ\êïç\mkr1\mkr1\bin\Debug\net8.0\mkr1.exe (ïðîöåññ 3396) çàâåðøèë ðàáîòó ñ êîäîì 0.
