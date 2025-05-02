@@ -1,5 +1,13 @@
-== OuterHTML ==
-<div class="container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+== div.addChild(p) ==
+<div><p></p></div>
 
-== InnerHTML ==
-<h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/>
+== p.addChild(text) ==
+<div><p>Hello</p></div>
+
+== ctrl + z, undo ==
+<div><p></p></div>
+
+== ctrl + y, redo ==
+<div><p>Hello</p></div>
+
+D:\HomeWork\Политех\2 курс\кпз\mkr1\mkr1\bin\Debug\net8.0\mkr1.exe (процесс 3396) завершил работу с кодом 0.
