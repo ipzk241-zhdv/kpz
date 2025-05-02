@@ -1,0 +1,5 @@
+== OuterHTML ==
+<div class="container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+
+== InnerHTML ==
+<h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/>
