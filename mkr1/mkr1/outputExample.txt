@@ -1,3 +1,4 @@
+=== Iterator ===
 ==== DFS traversal ====
 <div class="container"><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div></div>
 <div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
@@ -42,4 +43,20 @@ This is a custom markup example.
 Welcome to LightHTML
 This is a custom markup example.
 
-D:\HomeWork\�������\2 ����\���\mkr1\mkr1\bin\Debug\net8.0\mkr1.exe (������� 14552) �������� ������ � ����� 0.
+D:\HomeWork\Ïîëèòåõ\2 êóðñ\êïç\mkr1\mkr1\bin\Debug\net8.0\mkr1.exe (ïðîöåññ 14552) çàâåðøèë ðàáîòó ñ êîäîì 0.
+
+=== Command ===
+
+== div.addChild(p) ==
+<div><p></p></div>
+
+== p.addChild(text) ==
+<div><p>Hello</p></div>
+
+== ctrl + z, undo ==
+<div><p></p></div>
+
+== ctrl + y, redo ==
+<div><p>Hello</p></div>
+
+D:\HomeWork\Ïîëèòåõ\2 êóðñ\êïç\mkr1\mkr1\bin\Debug\net8.0\mkr1.exe (ïðîöåññ 3396) çàâåðøèë ðàáîòó ñ êîäîì 0.
