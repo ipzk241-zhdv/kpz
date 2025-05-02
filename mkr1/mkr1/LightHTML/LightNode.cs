@@ -7,7 +7,7 @@
             OnCreated();
         }
 
-        protected virtual void OnCreated() { Console.WriteLine($"{GetType().Name} created!"); }
+        protected virtual void OnCreated() { }
 
         public string Render()
         {
@@ -18,11 +18,11 @@
             return html;
         }
 
-        protected virtual void OnInserted(LightNode child) { Console.WriteLine($"{GetType().Name} inserted with new child {child.GetType().Name}!"); }
-        protected virtual void OnRemoved(LightNode child) { Console.WriteLine($"{GetType().Name} doesnt have {child.GetType().Name} anymore as child!"); }
-        protected virtual void OnStylesApplied() { Console.WriteLine($"{GetType().Name} styles were applied!"); }
-        protected virtual void OnClassListApplied() { Console.WriteLine($"{GetType().Name} class list applied!"); }
-        protected virtual void OnTextRendered() { Console.WriteLine($"{GetType().Name} text rendered!"); }
+        protected virtual void OnInserted(LightNode child) {}
+        protected virtual void OnRemoved(LightNode child) {}
+        protected virtual void OnStylesApplied() {}
+        protected virtual void OnClassListApplied() {}
+        protected virtual void OnTextRendered() {}
 
         public abstract string OuterHTML { get; }
         public abstract string InnerHTML { get; }

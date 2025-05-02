@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="TempleteMethod\" />
+    <Folder Include="Visitor\" />
   </ItemGroup>
 
 </Project>
