@@ -1,5 +1,45 @@
-== OuterHTML ==
-<div class="container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+==== DFS traversal ====
+<div class="container"><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div></div>
+<div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+<h1>Welcome to LightHTML</h1>
+Welcome to LightHTML
+<p>This is a custom markup example.</p>
+This is a custom markup example.
+<img class="responsive"/>
+<div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+<h1>Welcome to LightHTML</h1>
+Welcome to LightHTML
+<p>This is a custom markup example.</p>
+This is a custom markup example.
+<img class="responsive"/>
+<div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+<h1>Welcome to LightHTML</h1>
+Welcome to LightHTML
+<p>This is a custom markup example.</p>
+This is a custom markup example.
+<img class="responsive"/>
 
-== InnerHTML ==
-<h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/>
+
+
+===== BFS traversal ====
+<div class="container"><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div></div>
+<div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+<div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+<div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p><img class="responsive"/></div>
+<h1>Welcome to LightHTML</h1>
+<p>This is a custom markup example.</p>
+<img class="responsive"/>
+<h1>Welcome to LightHTML</h1>
+<p>This is a custom markup example.</p>
+<img class="responsive"/>
+<h1>Welcome to LightHTML</h1>
+<p>This is a custom markup example.</p>
+<img class="responsive"/>
+Welcome to LightHTML
+This is a custom markup example.
+Welcome to LightHTML
+This is a custom markup example.
+Welcome to LightHTML
+This is a custom markup example.
+
+D:\HomeWork\Политех\2 курс\кпз\mkr1\mkr1\bin\Debug\net8.0\mkr1.exe (процесс 14552) завершил работу с кодом 0.

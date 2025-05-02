@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using mkr1.Iterator;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace mkr1.LightHTML
 {
-    public class LightElementNode : LightNode
+    public class LightElementNode : LightNode, ILightAggregable<LightNode>
     {
         public string TagName { get; }
         public DisplayType Display { get; }
@@ -40,6 +41,16 @@ namespace mkr1.LightHTML
 
                 return $"<{TagName}{classAttribute}>{InnerHTML}</{TagName}>";
             }
+        }
+
+        public ILightIterator<LightNode> GetIterator(IteratorType type)
+        {
+            return type switch
+            {
+                IteratorType.DepthFirst => new DepthFirstIterator(this),
+                IteratorType.BreadthFirst => new BreadthFirstIterator(this),
+                _ => throw new ArgumentOutOfRangeException(nameof(type), type, null)
+            };
         }
     }
 }
