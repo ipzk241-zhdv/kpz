@@ -1,3 +1,41 @@
+# Visitor
+- Implemented interfaces `IVisitable` and `IVisitor`  
+- Next classes now implements `Accept` method to have `Visitor`:         
+-- `LightNode`  
+-- `LightTextNode`  
+-- `LightElementNode`  
+- `HTTPParserVisitor` collects all unique css styles and all unique texts recursively
+
+### Output examples:
+
+Example fragment:  
+```c#
+== Root ==
+<div class="container">
+    <div class="small-container">
+        <h1>Welcome to LightHTML</h1>
+        <p>This is a custom markup example.</p>
+    </div>
+    <div class="small-container">
+        <h1>Welcome to LightHTML</h1>
+        <p>This is a custom markup example.</p>
+    </div>
+    <div class="small-container">
+        <h1>Welcome to LightHTML</h1>
+        <p>This is a custom markup example.</p>
+    </div>
+</div>
+
+== Visitor CSS ==
+container
+small-container
+
+== Visitor texts ==
+Welcome to LightHTML
+This is a custom markup example.
+```
+
+
 # Template Method
 - Implemented `template method` in `LightNode` and `LightElementNode`
 - Implemented life hooks:     

@@ -1,5 +1,6 @@
 ﻿using mkr1.Iterator;
 using mkr1.State;
+using mkr1.Visitor;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -75,6 +76,14 @@ namespace mkr1.LightHTML
                 IteratorType.BreadthFirst => new BreadthFirstIterator(this),
                 _ => throw new ArgumentOutOfRangeException(nameof(type), type, null)
             };
+        }
+
+        public override void Accept(IVisitor visitor)
+        {
+            visitor.Visit(this);
+            foreach (var child in Children)
+                if (child is IVisitable v)
+                    v.Accept(visitor);
         }
     }
 }

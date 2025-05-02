@@ -1,3 +1,18 @@
+=== Visitor ===
+== Root ==
+<div class="container"><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p></div><div class="small-container"><h1>Welcome to LightHTML</h1><p>This is a custom markup example.</p></div></div>
+
+
+== Visitor CSS ==
+container
+small-container
+
+
+== Visitor texts ==
+Welcome to LightHTML
+This is a custom markup example.
+
+
 === Template Method ===
 == div.addChild(p) ==
 LightElementNode class list applied!

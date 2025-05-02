@@ -1,11 +1,14 @@
-﻿namespace mkr1.LightHTML
+﻿using mkr1.Visitor;
+
+namespace mkr1.LightHTML
 {
-    public abstract class LightNode
+    public abstract class LightNode : IVisitable
     {
         public LightNode()
         {
             OnCreated();
         }
+        public abstract void Accept(IVisitor visitor);
 
         protected virtual void OnCreated() { }
 
@@ -47,6 +50,11 @@
         }
 
         public override string InnerHTML => Text;
+
+        public override void Accept(IVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 
     public enum DisplayType { Block, Inline }

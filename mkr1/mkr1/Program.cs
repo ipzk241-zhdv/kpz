@@ -2,11 +2,24 @@ using mkr1.LightHTML;
 using mkr1.Iterator;
 using mkr1.Command;
 using mkr1.State;
+using mkr1.Visitor;
 
 var root = GenerateRoot();
+Visitor(root);
 State();
 Iterator(root);
 Command();
+
+static void Visitor(LightElementNode root)
+{
+    var parser = new HTMLParserVisitor();
+    root.Accept(parser);
+    Console.WriteLine($"== Root ==\n{root.OuterHTML}");
+    Console.WriteLine("\n\n== Visitor CSS ==");
+    Console.WriteLine(string.Join("\n", parser.Classes.ToArray()));
+    Console.WriteLine("\n\n== Visitor texts ==");
+    Console.WriteLine(string.Join("\n", parser.Texts.ToArray()));
+}
 
 static void State()
 {
@@ -63,6 +76,9 @@ static LightElementNode GenerateRoot()
 
     var img = new LightElementNode("img", closing: ClosingType.SelfClosing);
     img.AddClass("responsive");
+
+    div.AddChild(h1);
+    div.AddChild(p);
 
     root.AddChild(div);
     root.AddChild(div);
