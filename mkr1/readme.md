@@ -1,3 +1,35 @@
+# Template Method
+- Implemented `template method` in `LightNode` and `LightElementNode`
+- Implemented life hooks:     
+-- `OnCreated`  
+-- `OnIserted/OnRemoved`  
+-- `OnClassListApplied`  
+-- `OnStylesApplied`  
+-- `OnTextRendered`
+- All hooks (at least, I believe) work with previously added features like `RenderState` or `AddClassCommand`
+
+### Output examples:
+
+Example fragment:  
+```c#
+== div.addChild(p) ==
+LightElementNode class list applied!
+LightElementNode styles were applied!
+LightElementNode text rendered!
+<div><p></p></div>
+
+== p.addChild(text) ==
+LightElementNode inserted with new child LightTextNode!
+LightElementNode class list applied!
+LightElementNode styles were applied!
+LightTextNode class list applied!
+LightTextNode styles were applied!
+LightTextNode text rendered!
+LightTextNode text rendered!
+LightElementNode text rendered!
+<div><p>Hello</p></div>
+```
+
 # State
 - Implemented interface `IRenderState`  
 - Implemented 3 state:     
